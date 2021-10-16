@@ -18,7 +18,7 @@ function LoginForm({ Submit, error }) {
     <form>
       <div className="form-inner">
         <h2>Login Form</h2>
-
+        {error != "" ? <div className="error">{error}</div> : ""}
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input

@@ -13,11 +13,28 @@ const LoginPage = () => {
 
   const Submit = (details) => {
     console.log(details);
+    if (
+      details.name == adminUser.name &&
+      details.email == adminUser.email &&
+      details.password == adminUser.password
+    ) {
+      console.log("yay logged in");
+      setUser({
+        name: details.name,
+        email: details.email,
+        password: details.password,
+      });
+    } else {
+      console.log("details no match");
+      setError("Sorry, details not match");
+    }
   };
 
   const Logout = () => {
     console.log("You've logged out");
+    setUser({ name: "", email: "" });
   };
+
   return (
     <div>
       {user.email !== "" ? (
