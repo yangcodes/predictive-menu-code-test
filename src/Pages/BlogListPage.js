@@ -7,6 +7,7 @@ const BlogListPage = () => (
     {blogContent.map((blog, key) => (
       <Link className="blog-list-item" key={key} to={`/blog/${blog.name}`}>
         <h3>{blog.title}</h3>
+        <p>{blog.content[0].substring(0, 150)}...</p>
       </Link>
     ))}
   </>
