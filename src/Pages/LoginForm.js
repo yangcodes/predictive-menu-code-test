@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import "./LoginForm.css";
 
 function LoginForm({ Submit, error }) {
-  const [details, setDetails] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
-
+  const [details, setDetails] = useState({ name: "", email: "", password: "" });
   const submitHandler = (e) => {
     e.preventDefault();
     Submit(details);
@@ -19,7 +14,7 @@ function LoginForm({ Submit, error }) {
     <form>
       <div className="form-inner">
         <h2>Login Form</h2>
-        {error !== "" ? <div className="error">{error}</div> : ""}
+        {error != "" ? <div className="error">{error}</div> : ""}
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input

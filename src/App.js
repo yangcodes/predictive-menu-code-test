@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
+
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
-import BlogListPage from "./Pages/BlogListPage";
 import BlogPage from "./Pages/BlogPage";
+import BlogListPage from "./Pages/BlogListPage";
 import LoginPage from "./Pages/LoginPage";
 import NavBar from "./NavBar";
 
