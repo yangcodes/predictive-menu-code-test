@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 
-function LoginForm() {
+function LoginForm({ Submit, error }) {
+  const [details, setDetails] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const cancelHandler = () => {
+    window.location.assign("/");
+  };
   return (
     <form>
       <div className="form-inner">
@@ -20,7 +29,7 @@ function LoginForm() {
         </div>
         <div className="form-button">
           <input type="button" value="Submit" />
-          <input type="button" value="Cancel" />
+          <input type="button" value="Cancel" onClick={cancelHandler} />
         </div>
       </div>
     </form>

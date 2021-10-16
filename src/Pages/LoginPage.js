@@ -28,7 +28,7 @@ const LoginPage = () => {
           </h2>
         </div>
       ) : (
-        <LoginForm />
+        <LoginForm Submit={Submit} error={error} />
       )}
     </div>
   );
