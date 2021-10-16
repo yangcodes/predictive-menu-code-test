@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LoginForm from "./LoginForm";
+import "./LoginPage.css";
 
 const LoginPage = () => {
   const adminUser = {
@@ -14,9 +15,9 @@ const LoginPage = () => {
   const Submit = (details) => {
     console.log(details);
     if (
-      details.name == adminUser.name &&
-      details.email == adminUser.email &&
-      details.password == adminUser.password
+      details.name === adminUser.name &&
+      details.email === adminUser.email &&
+      details.password === adminUser.password
     ) {
       console.log("yay logged in");
       setUser({
@@ -41,7 +42,9 @@ const LoginPage = () => {
         <div>
           <h2>
             Welcome, <span>{user.name}</span>
-            <button onClick={Logout}>Logout</button>
+            <button className="error" onClick={Logout}>
+              Logout
+            </button>
           </h2>
         </div>
       ) : (

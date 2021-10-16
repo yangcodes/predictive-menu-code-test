@@ -1,0 +1,18 @@
+.error {
+  color: salmon;
+}
+
+div {
+  position: relative;
+}
+button {
+  padding: 16px;
+  position: absolute;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  top: 80px;
+  left: 100px;
+}

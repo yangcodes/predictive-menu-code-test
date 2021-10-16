@@ -1,7 +1,7 @@
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import HomePage from "./Pages/HomePage";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import AboutPage from "./Pages/AboutPage";
 import BlogListPage from "./Pages/BlogListPage";
 import BlogPage from "./Pages/BlogPage";
