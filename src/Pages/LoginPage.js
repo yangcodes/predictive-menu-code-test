@@ -20,7 +20,7 @@ const LoginPage = () => {
       details.email == adminuser.email &&
       details.password == adminuser.password
     ) {
-      console.log("yay logged in");
+      alert("submitted");
       setUser({
         name: details.name,
         email: details.email,

