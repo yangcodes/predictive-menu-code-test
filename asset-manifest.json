@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/predictive-hire/static/css/main.baff1587.chunk.css",
+    "main.js": "/predictive-hire/static/js/main.508af702.chunk.js",
+    "main.js.map": "/predictive-hire/static/js/main.508af702.chunk.js.map",
+    "runtime-main.js": "/predictive-hire/static/js/runtime-main.c7e90d14.js",
+    "runtime-main.js.map": "/predictive-hire/static/js/runtime-main.c7e90d14.js.map",
+    "static/js/2.f43fe5e8.chunk.js": "/predictive-hire/static/js/2.f43fe5e8.chunk.js",
+    "static/js/2.f43fe5e8.chunk.js.map": "/predictive-hire/static/js/2.f43fe5e8.chunk.js.map",
+    "index.html": "/predictive-hire/index.html",
+    "static/css/main.baff1587.chunk.css.map": "/predictive-hire/static/css/main.baff1587.chunk.css.map",
+    "static/js/2.f43fe5e8.chunk.js.LICENSE.txt": "/predictive-hire/static/js/2.f43fe5e8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7e90d14.js",
+    "static/js/2.f43fe5e8.chunk.js",
+    "static/css/main.baff1587.chunk.css",
+    "static/js/main.508af702.chunk.js"
+  ]
+}
